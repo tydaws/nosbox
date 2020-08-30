@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eld/CLionProjects/nosbox-c/src/core/nitrorepo.c
+nitrorepo.h
+/home/eld/CLionProjects/nosbox-c/src/core/nitrorepo.h
+stdio.h
+-
+unistd.h
+-
+wait.h
+-
+
+/home/eld/CLionProjects/nosbox-c/src/core/nitrorepo.h
+
+/home/eld/CLionProjects/nosbox-c/src/core/nitrosh.c
+stdio.h
+-
+unistd.h
+-
+string.h
+-
+stdlib.h
+-
+nitrorepo.h
+/home/eld/CLionProjects/nosbox-c/src/core/nitrorepo.h
+

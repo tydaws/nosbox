@@ -1,0 +1,4 @@
+/snap/clion/124/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/bin/clang -G "CodeBlocks - Unix Makefiles" /home/eld/CLionProjects/nosbox-c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/eld/CLionProjects/nosbox-c/cmake-build-debug

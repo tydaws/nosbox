@@ -1,0 +1,1 @@
+/bin/clang -g   CMakeFiles/test.dir/src/tasks/test.c.o  -o test 

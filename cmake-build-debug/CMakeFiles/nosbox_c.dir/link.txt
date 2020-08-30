@@ -1,0 +1,1 @@
+/bin/clang -g   CMakeFiles/nosbox_c.dir/src/nitrosh.c.o CMakeFiles/nosbox_c.dir/src/nitrorepo.c.o  -o nosbox_c 

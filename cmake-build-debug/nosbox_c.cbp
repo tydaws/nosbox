@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="nosbox_c"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\core\;CMake Files\src\core\commands\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/eld/CLionProjects/nosbox-c/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/eld/CLionProjects/nosbox-c/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/eld/CLionProjects/nosbox-c/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="core">
+				<Option output="/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/core" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/llvm-10/lib/clang/10.0.0/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/Makefile&quot;  VERBOSE=1 core"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="core/fast">
+				<Option output="/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/core" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/llvm-10/lib/clang/10.0.0/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/Makefile&quot;  VERBOSE=1 core/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option output="/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/llvm-10/lib/clang/10.0.0/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test/fast">
+				<Option output="/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/llvm-10/lib/clang/10.0.0/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/eld/CLionProjects/nosbox-c/src/core/commands/test.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/eld/CLionProjects/nosbox-c/src/core/nitrorepo.c">
+			<Option target="core"/>
+		</Unit>
+		<Unit filename="/home/eld/CLionProjects/nosbox-c/src/core/nitrorepo.h">
+			<Option target="core"/>
+		</Unit>
+		<Unit filename="/home/eld/CLionProjects/nosbox-c/src/core/nitrosh.c">
+			<Option target="core"/>
+		</Unit>
+		<Unit filename="/home/eld/CLionProjects/nosbox-c/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/eld/CLionProjects/nosbox-c/src/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\core\"/>
+		</Unit>
+		<Unit filename="/home/eld/CLionProjects/nosbox-c/src/core/commands/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\core\commands\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
