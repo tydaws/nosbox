@@ -8,7 +8,6 @@
 
 int Execute(char *buffer)
 {
-    //TODO: Setup fork and execute program
     if(strcmp(buffer, "exit") == 0)
     {
         return 0;
