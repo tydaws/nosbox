@@ -1,1 +1,0 @@
-/bin/clang -g  -rdynamic CMakeFiles/core.dir/nitrosh.c.o CMakeFiles/core.dir/nitrorepo.c.o  -o core 
