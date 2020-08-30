@@ -6,26 +6,24 @@
 
 #define READ_BUFFER 1024;
 
-int Execute(char *buffer)
+int executeCommand(char *buffer)
 {
+    //Compares input buffer to command names and then executes them
     if(strcmp(buffer, "exit") == 0)
     {
         return 0;
     }
-
     if(strcmp(buffer, "test") == 0)
     {
         executeTest();
         return 1;
     }
-
     return 1;
 }
 
 char* parseLine(char* buffer)
 {
     char* line = strtok(buffer, "\n");
-
     return line;
 }
 
@@ -53,8 +51,8 @@ void cycle()
         //Parse user input
         char* line = parseLine(buffer);
 
-        //Execute if valid
-        alive = Execute(line);
+        //executeCommand if valid
+        alive = executeCommand(line);
 
         free(buffer);
     }
@@ -75,16 +73,13 @@ void logoInit()
 
 void init()
 {
-    //TODO: BUILD SOME SHIT HERE
     logoInit();
-    fflush(stdout);
     cycle();
 }
 
 
 int main()
 {
-    //Run shell loop
     init();
     return 0;
 }

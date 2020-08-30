@@ -1,1 +1,1 @@
-add_executable(test test.c)
+add_executable(test test.c ../filesystem.h)
