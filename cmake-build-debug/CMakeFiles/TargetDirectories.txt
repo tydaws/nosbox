@@ -1,8 +1,0 @@
-/home/eld/CLionProjects/nosbox-c/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/eld/CLionProjects/nosbox-c/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/CMakeFiles/rebuild_cache.dir
-/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/CMakeFiles/edit_cache.dir
-/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/CMakeFiles/core.dir
-/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/CMakeFiles/rebuild_cache.dir
-/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/CMakeFiles/edit_cache.dir
-/home/eld/CLionProjects/nosbox-c/cmake-build-debug/src/core/commands/CMakeFiles/test.dir
