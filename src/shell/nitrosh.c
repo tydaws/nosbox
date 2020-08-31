@@ -29,6 +29,7 @@ char* parseLine(char* buffer)
 
 char* readLine()
 {
+    //TODO: Handle case where input exceeds buffer size
     int bufferSize = READ_BUFFER;
     char *buffer = malloc(sizeof(char) * bufferSize);
     read(STDIN_FILENO, buffer, bufferSize);

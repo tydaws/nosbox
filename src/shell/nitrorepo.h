@@ -5,5 +5,6 @@ void executeTest();
 
 #endif //NOSBOX_C_NITROREPO_H
 
+//TODO: Get these from PATH
 #define TEST "./commands/test"
 
