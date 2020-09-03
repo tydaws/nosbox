@@ -6,7 +6,7 @@
 
 #define READ_BUFFER 1024;
 
-int executeCommand(char *buffer)
+int executeCommand(char *buffer, char *args[])
 {
     //Compares input buffer to command names and then executes them
     if(strcmp(buffer, "exit") == 0)
@@ -16,6 +16,11 @@ int executeCommand(char *buffer)
     if(strcmp(buffer, "test") == 0)
     {
         executeTest();
+        return 1;
+    }
+    if(strcmp(buffer, "diskmanager") == 0)
+    {
+        executeDiskManager(args);
         return 1;
     }
     return 1;
@@ -53,7 +58,7 @@ void cycle()
         char* line = parseLine(buffer);
 
         //executeCommand if valid
-        alive = executeCommand(line);
+        alive = executeCommand(line, buffer);
 
         free(buffer);
     }

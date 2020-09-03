@@ -33,3 +33,8 @@ void executeTest()
 {
     launch(TEST, NULL);
 }
+
+void executeDiskManager(char* args[])
+{
+    launch(DISKMANAGER, args);
+}

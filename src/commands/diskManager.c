@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <argp.h>
-#include "../../disk/disk.h"
+#include "../disk/disk.h"
 
 int diskSize;
 int fileDescriptor;
@@ -34,5 +34,9 @@ int main(int argc, char *argv[])
 
         }
     }
+
+    printf("Executed Disk Manager\n");
+    fflush(stdout);
+    return 0;
 
 }
