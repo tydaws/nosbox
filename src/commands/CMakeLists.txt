@@ -1,1 +1,1 @@
-add_executable(test test.c)
+add_library(disk disk.h disk.c)
