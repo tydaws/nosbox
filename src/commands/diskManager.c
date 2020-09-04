@@ -7,6 +7,7 @@ int diskSize = NULL;
 int fileDescriptor = NULL;
 char *fileName = NULL;
 int cflag = 0;
+int rflag = 0;
 int sflag = 0;
 
 
@@ -15,7 +16,7 @@ int main(int argc, char *argv[])
 {
     int i;
 
-    while ((i = getopt(argc, argv, "c:s:")) != -1)
+    while ((i = getopt(argc, argv, "r:c:s:")) != -1)
     {
         switch(i)
         {
@@ -27,13 +28,18 @@ int main(int argc, char *argv[])
                 diskSize = atoi(optarg);
                 sflag = 1;
                 break;
-            default:
-                printf("Executed Default Option\n");
+            case 'r':
+                fileName = optarg;
+                rflag = 1;
 
 
         }
     }
 
+    if(rflag)
+    {
+        removeDisk(fileName);
+    }
     if(cflag && sflag)
     {
         createDisk(fileName, diskSize);
