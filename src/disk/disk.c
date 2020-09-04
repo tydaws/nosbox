@@ -12,7 +12,7 @@ int createDisk(char* filename, int numberOfBytes)
     //Check to see if "disk" already exists
     if (stat(filename, &buf) == 0)
     {
-        printf("File already exists.");
+        printf("File already exists.\n");
         return -1;
     }
 
@@ -28,5 +28,7 @@ int createDisk(char* filename, int numberOfBytes)
 
     fclose(disk);
 
+    printf("Create Disk Executed\n");
+    fflush(stdout);
     return fileDescriptor;
 }

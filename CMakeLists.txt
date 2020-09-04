@@ -4,6 +4,5 @@ project(nosbox C)
 set(CMAKE_C_STANDARD 99)
 
 add_subdirectory(src/shell)
-add_subdirectory(src/commands)
 add_subdirectory(src/disk)
-add_subdirectory(src/filesystem)
+add_subdirectory(src/commands)

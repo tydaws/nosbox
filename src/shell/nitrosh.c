@@ -4,7 +4,8 @@
 #include <stdlib.h>
 #include "nitrorepo.h"
 
-#define READ_BUFFER 1024;
+#define READ_BUFFER 1024
+#define DELIM " \t\r\n\a"
 
 int executeCommand(char *buffer, char *args[])
 {
@@ -26,10 +27,21 @@ int executeCommand(char *buffer, char *args[])
     return 1;
 }
 
-char* parseLine(char* buffer)
+char** parseLine(char* buffer)
 {
-    char* line = strtok(buffer, "\n");
-    return line;
+    char* line;
+    char **argument = malloc(64 * sizeof(char*));
+    int i = 0;
+
+    line = strtok(buffer, DELIM);
+    while(line != NULL)
+    {
+        argument[i] = line;
+        i++;
+
+        line = strtok(NULL, DELIM);
+    }
+    return argument;
 }
 
 char* readLine()
@@ -55,10 +67,10 @@ void cycle()
         buffer = readLine();
 
         //Parse user input
-        char* line = parseLine(buffer);
+        char** line = parseLine(buffer);
 
         //executeCommand if valid
-        alive = executeCommand(line, buffer);
+        alive = executeCommand(line[0], line);
 
         free(buffer);
     }

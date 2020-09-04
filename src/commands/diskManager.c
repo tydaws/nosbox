@@ -1,41 +1,53 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <argp.h>
+#include <stdlib.h>
 #include "../disk/disk.h"
 
-int diskSize;
-int fileDescriptor;
-char *filename;
+int diskSize = NULL;
+int fileDescriptor = NULL;
+char *fileName = NULL;
+int cflag = 0;
+int sflag = 0;
 
-void setFileName(char *fileName)
-{
-    if(fileName == NULL)
-    {
-
-    }
-}
 
 
 int main(int argc, char *argv[])
 {
     int i;
-    while ((i = getopt (argc, argv, "co:")) != -1)
+
+    while ((i = getopt(argc, argv, "c:s:")) != -1)
     {
         switch(i)
         {
             case 'c':
-                setFileName(optarg);
+                fileName = optarg;
+                cflag = 1;
                 break;
             case 's':
+                diskSize = atoi(optarg);
+                sflag = 1;
                 break;
             default:
-                printf("Executed Disk Manager");
+                printf("Executed Default Option\n");
 
 
         }
     }
 
-    printf("Executed Disk Manager\n");
+    if(cflag && sflag)
+    {
+        createDisk(fileName, diskSize);
+    }
+    else if(cflag && !sflag)
+    {
+        printf("Error: please specify file size\n");
+    }
+    else if(!cflag && sflag)
+    {
+        printf("Error: please specify a command\n");
+    }
+
+    printf("Disk Manager Exiting\n");
     fflush(stdout);
     return 0;
 
