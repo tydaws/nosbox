@@ -9,6 +9,8 @@ char *fileName = NULL;
 int cflag = 0;
 int rflag = 0;
 int sflag = 0;
+int mflag = 0;
+int uflag = 0;
 
 
 
@@ -16,7 +18,9 @@ int main(int argc, char *argv[])
 {
     int i;
 
-    while ((i = getopt(argc, argv, "r:c:s:")) != -1)
+    chdir("..");
+
+    while ((i = getopt(argc, argv, "r:c:s:m:u:")) != -1)
     {
         switch(i)
         {
@@ -31,8 +35,13 @@ int main(int argc, char *argv[])
             case 'r':
                 fileName = optarg;
                 rflag = 1;
-
-
+                break;
+            case 'm':
+                fileName = optarg;
+                mflag = 1;
+            case 'u':
+                fileName = optarg;
+                uflag = 1;
         }
     }
 
@@ -51,6 +60,15 @@ int main(int argc, char *argv[])
     else if(!cflag && sflag)
     {
         printf("Error: please specify a command\n");
+    }
+
+    if(mflag)
+    {
+        mountDisk(fileName);
+    }
+    if(uflag)
+    {
+        unmountDisk(fileName);
     }
 
     printf("Disk Manager Exiting\n");
